@@ -19,11 +19,12 @@ public class MainPage {
     }
 
     public void clickOn(MainPage page){
-        System.out.println("You've clicked on page" + page.getClass().getSimpleName());
+        System.out.println("You've clicked on page: " + page.getPageName());
+                //getClass().getSimpleName());
     }
 
     public String getPageName() {
-        return pageName;
+        return this.pageName;
     }
 
     public String[] getListOfSchoolsOrCourses() {

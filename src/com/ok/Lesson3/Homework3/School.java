@@ -21,9 +21,14 @@ public class School extends MainPage {
         clickOn(moreDetails);
     }
 
+    public void selectCourse(Course course){
+        moreDetails();
+        clickOn(course);
+    }
+
     @Override
     public String getPageName() {
-        System.out.print("Overridden page name: ");
+        System.out.print("Overridden school name: ");
         return super.getPageName();
 
     }

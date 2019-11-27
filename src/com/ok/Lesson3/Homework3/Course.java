@@ -17,10 +17,4 @@ public class Course  extends MainPage{
         clickOn(plan);
     }
 
-    @Override
-    public String getPageName() {
-        System.out.print("Overridden page name: ");
-        return super.getPageName();
-
-    }
 }
