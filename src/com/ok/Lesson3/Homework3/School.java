@@ -28,8 +28,6 @@ public class School extends MainPage {
 
     @Override
     public String getPageName() {
-        System.out.print("Overridden school name: ");
-        return super.getPageName();
-
+        return "[Override used] " + super.getPageName();
     }
 }

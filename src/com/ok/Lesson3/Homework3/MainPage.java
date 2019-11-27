@@ -20,22 +20,24 @@ public class MainPage {
 
     public void clickOn(MainPage page){
         System.out.println("You've clicked on page: " + page.getPageName());
-                //getClass().getSimpleName());
     }
 
     public String getPageName() {
         return this.pageName;
     }
 
-    public String[] getListOfSchoolsOrCourses() {
-        return listOfSchoolsOrCourses;
+    public void getListOfSchoolsOrCourses() {
+        if (listOfSchoolsOrCourses.length > 0) {
+            System.out.println("There are the following courses:");
+            for (String course : listOfSchoolsOrCourses) {
+                System.out.println("\t" + course);
+            }
+        } else {
+            System.out.println("There're no courses on " + getPageName());
+        }
     }
 
-    public void setPageName(String pageName) {
-        this.pageName = pageName;
-    }
-
-    public void setListOfSchoolsOrCourses(String[] listOfSchoolsOrCourses) {
-        this.listOfSchoolsOrCourses = listOfSchoolsOrCourses;
+    public void whereAmI() {
+        System.out.println("You're on the " + getPageName());
     }
 }
