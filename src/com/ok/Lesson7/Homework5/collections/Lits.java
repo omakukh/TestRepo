@@ -9,7 +9,7 @@ public class Lits {
     private Set<Teacher> listOfTeachers = new HashSet<>();
     private Map<String, Set<String>> litsNews = new HashMap<>();
 
-    Lits() {
+    public Lits() {
         schools.add("QA School");
         schools.add("PM School");
         schools.add("BDA School");
