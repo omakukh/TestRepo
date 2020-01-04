@@ -2,11 +2,11 @@ package com.ok.Lesson3.AdditionalTasks;
 
 public class IntegerArray extends Array {
 
-    IntegerArray(int[] intArr){
+    public IntegerArray(int[] intArr){
         super(intArr);
     }
 
-    IntegerArray(){}
+    public IntegerArray(){}
 
     public int allElementsSum(){
         int sum = 0;

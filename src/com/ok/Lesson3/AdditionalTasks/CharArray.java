@@ -2,11 +2,11 @@ package com.ok.Lesson3.AdditionalTasks;
 
 public class CharArray extends Array {
 
-    CharArray(char[] charArr) {
+    public CharArray(char[] charArr) {
         super.addArrayElement(charsToInts(charArr));
     }
 
-    CharArray(){}
+    public CharArray(){}
 
 
     public void ifCharExists(char charToCheck){

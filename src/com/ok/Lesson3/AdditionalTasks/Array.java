@@ -4,11 +4,11 @@ public class Array {
 
     private int[] customArray = new int[]{};
 
-    Array(int[] customArray){
+    public Array(int[] customArray){
         this.customArray = customArray;
     }
 
-    Array(){}
+    public Array(){}
 
     public int[] getArray(){
         return customArray;
